@@ -85,7 +85,7 @@ const METHODS: Method[] = [
       <>
         <p className="text-[15px] leading-relaxed text-white/60">
           Если вы использовали хост <span className="font-mono text-[13px] text-white/85 line-through decoration-white/40">50.7.85.221</span> в
-          роутере — замените его на новый. Подойдёт основной адрес, а если он не отвечает — запасной:
+          роутере — замените его на новый.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <CopyChip value="31.129.110.240" label="Основной" big />
