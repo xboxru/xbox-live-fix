@@ -139,8 +139,7 @@ const METHODS: Method[] = [
           и удалите устаревшую строку:
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CopyChip value="164.90.228.248" label="Новый хост" big />
-          <CopyChip value="31.129.110.240" label="Если первый не работает" muted />
+          <CopyChip value="31.129.110.240" label="Новый хост" big />
         </div>
         <div className="mt-5 inline-flex items-center gap-3 rounded-xl border border-red-400/20 bg-red-400/[0.05] px-4 py-3">
           <Trash2 size={15} className="text-red-300" />
@@ -149,7 +148,7 @@ const METHODS: Method[] = [
         </div>
         <div className="mt-6">
           <a
-            href="https://t.me/spelonline"
+            href="https://telegra.ph/Reshenie-problemy-0x80a40401-Kak-obojti-oshibku-s-pomoshchyu-AdGuard-DNS-01-27"
             target="_blank"
             rel="noreferrer"
             className="group inline-flex items-center gap-2 font-mono text-[12px] uppercase tracking-[0.2em] text-xbox/90 transition-colors hover:text-xbox"
