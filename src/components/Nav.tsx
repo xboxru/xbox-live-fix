@@ -43,7 +43,7 @@ export default function Nav() {
           <a href="#top" className="group flex items-center gap-3">
             <XboxMark size={30} className="transition-transform duration-500 group-hover:rotate-[20deg]" />
             <span className="flex flex-col leading-none">
-              <span className="font-display text-[13px] font-bold tracking-[0.14em]">SPELONLINE</span>
+              <span className="font-display text-[13px] font-bold tracking-[0.14em]">Xbox Россия Игры и Подписки</span>
               <span className="mt-1 font-mono text-[9px] uppercase tracking-[0.32em] text-xbox/80">
                 Xbox Live Guide
               </span>
