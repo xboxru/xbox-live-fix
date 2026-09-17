@@ -50,7 +50,7 @@ export default function Footer() {
               className="group mt-5 inline-flex items-center gap-3 rounded-full border border-xbox/30 bg-xbox/[0.07] px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.12em] text-xbox-soft transition-all duration-300 hover:bg-xbox/15 hover:shadow-[0_0_30px_-6px_rgba(155,240,11,0.6)]"
             >
               <MessageCircle size={14} />
-              Написать Руслану
+              Написать
             </a>
           </div>
 
