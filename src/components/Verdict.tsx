@@ -43,10 +43,10 @@ export default function Verdict() {
               className="group inline-flex items-center gap-3 rounded-full bg-xbox px-8 py-4 font-display text-[12px] font-bold uppercase tracking-[0.12em] text-[#0a1403] transition-all duration-300 hover:shadow-[0_0_50px_-4px_rgba(155,240,11,0.9)]"
             >
               <Gamepad2 size={16} strokeWidth={2.4} />
-              Канал SPELONLINE
+              Канал Xbox Россия Игры и Подписки
             </a>
             <a
-              href="https://t.me/spelonline"
+              href="https://t.me/realfurys"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-3 rounded-full border border-white/15 px-8 py-4 font-display text-[12px] font-bold uppercase tracking-[0.12em] text-white/80 transition-all duration-300 hover:border-xbox/50 hover:text-xbox"
