@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Unbounded", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-xbox: #9bf00b;
+  --color-xbox-soft: #c9ff66;
+  --color-xbox-deep: #107c10;
+  --color-ink: #050806;
+  --color-panel: #0a0e09;
+  --color-line: rgba(255, 255, 255, 0.08);
+
+  --animate-marquee: marquee 46s linear infinite;
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-float-late: float 12s ease-in-out -5s infinite;
+  --animate-orbit: orbit 28s linear infinite;
+  --animate-orbit-rev: orbit-rev 40s linear infinite;
+  --animate-blink: blink 2.2s ease-in-out infinite;
+  --animate-scanline: scanline 6s linear infinite;
+  --animate-pulse-ring: pulse-ring 2.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-18px); }
+  }
+  @keyframes orbit {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes orbit-rev {
+    to { transform: rotate(-360deg); }
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+  }
+  @keyframes scanline {
+    0% { top: -12%; opacity: 0; }
+    12% { opacity: 1; }
+    88% { opacity: 1; }
+    100% { top: 112%; opacity: 0; }
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.55); opacity: 0.9; }
+    100% { transform: scale(1.5); opacity: 0; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050806;
+  color: #f2f6ee;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #9bf00b;
+  color: #061007;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #050806;
+}
+::-webkit-scrollbar-thumb {
+  background: #1d2b16;
+  border-radius: 8px;
+  border: 2px solid #050806;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a5220;
+}
+
+/* ---------- reveal on scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--ry, 30px));
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- typography helpers ---------- */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(242, 246, 238, 0.85);
+}
+.text-outline-faint {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(155, 240, 11, 0.35);
+}
+@media (min-width: 1024px) {
+  .text-outline { -webkit-text-stroke-width: 2px; }
+}
+
+.text-gradient-xbox {
+  background: linear-gradient(100deg, #e9ffc4 0%, #9bf00b 45%, #2fae1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- surfaces ---------- */
+.panel {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.panel-hover {
+  transition: border-color 0.5s ease, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease, background 0.5s ease;
+}
+.panel-hover:hover {
+  border-color: rgba(155, 240, 11, 0.35);
+  box-shadow: 0 0 0 1px rgba(155, 240, 11, 0.12), 0 24px 70px -30px rgba(155, 240, 11, 0.25);
+  transform: translateY(-4px);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(155, 240, 11, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(155, 240, 11, 0.05) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.fx-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+}
+
+.xbox-glow {
+  filter: drop-shadow(0 0 28px rgba(155, 240, 11, 0.45)) drop-shadow(0 0 90px rgba(155, 240, 11, 0.18));
+}
+
+.link-underline {
+  background-image: linear-gradient(#9bf00b, #9bf00b);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover {
+  background-size: 100% 1.5px;
+}
