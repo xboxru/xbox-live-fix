@@ -119,8 +119,6 @@ const METHODS: Method[] = [
           <Note tone="warn" icon={AlertTriangle}>
             <span>
               Важно: <span className="font-semibold text-white">DNS на консоли — автоматические!</span>{" "}
-              Четвёртая строка (31.129.110.240) — запасной вариант, используйте её вместо третьей,
-              если основной хост не отвечает.
             </span>
           </Note>
         </div>
