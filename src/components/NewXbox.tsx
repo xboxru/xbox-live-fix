@@ -46,7 +46,7 @@ export default function NewXbox() {
                   {GUIDES.map((g) => (
                     <a
                       key={g}
-                      href="https://t.me/spelonline"
+                      href="https://t.me/spelonline/2953"
                       target="_blank"
                       rel="noreferrer"
                       className="group flex flex-col gap-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:border-xbox/50 hover:bg-xbox/[0.06]"
@@ -60,7 +60,7 @@ export default function NewXbox() {
                 </div>
 
                 <a
-                  href="https://t.me/spelonline"
+                  href="https://t.me/spelonline/3522"
                   target="_blank"
                   rel="noreferrer"
                   className="group mt-4 flex items-center justify-between rounded-2xl border border-xbox/25 bg-xbox/[0.06] p-5 transition-all duration-300 hover:bg-xbox/[0.12] hover:shadow-[0_0_36px_-10px_rgba(155,240,11,0.5)]"
