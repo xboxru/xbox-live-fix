@@ -88,8 +88,7 @@ const METHODS: Method[] = [
           роутере — замените его на новый. Подойдёт основной адрес, а если он не отвечает — запасной:
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CopyChip value="164.90.228.248" label="Основной" big />
-          <CopyChip value="31.129.110.240" label="Запасной" muted />
+          <CopyChip value="31.129.110.240" label="Основной" big />
         </div>
 
         <div className="mt-8">
@@ -109,8 +108,7 @@ const METHODS: Method[] = [
               lines={[
                 { text: "no ip host user.auth.xboxlive.com", tone: "cmd" },
                 { text: "no ip host xsts.auth.xboxlive.com", tone: "cmd" },
-                { text: "ip host xsts.auth.xboxlive.com 164.90.228.248", tone: "ok" },
-                { text: "ip host xsts.auth.xboxlive.com 31.129.110.240", tone: "dim" },
+                { text: "ip host xsts.auth.xboxlive.com 31.129.110.240", tone: "ок" },
                 { text: "system configuration save", tone: "ok" },
               ]}
             />
