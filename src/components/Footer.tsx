@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <XboxMark size={34} />
               <span className="flex flex-col leading-none">
-                <span className="font-display text-[15px] font-bold tracking-[0.14em]">Xbox Россия Игры и Подписки</span>
+                <span className="font-display text-[15px] font-bold tracking-[0.14em]">XP Store</span>
                 <span className="mt-1 font-mono text-[9px] uppercase tracking-[0.32em] text-xbox/80">
                   Xbox Live Guide
                 </span>
