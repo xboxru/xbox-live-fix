@@ -44,7 +44,7 @@ export default function Footer() {
               Будут вопросы — пишите: <span className="font-display font-semibold text-white">Руслан</span>
             </p>
             <a
-              href="https://t.me/spelonline"
+              href="https://t.me/realfurys"
               target="_blank"
               rel="noreferrer"
               className="group mt-5 inline-flex items-center gap-3 rounded-full border border-xbox/30 bg-xbox/[0.07] px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.12em] text-xbox-soft transition-all duration-300 hover:bg-xbox/15 hover:shadow-[0_0_30px_-6px_rgba(155,240,11,0.6)]"
@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/8 pt-7 sm:flex-row sm:items-center">
           <p className="font-mono text-[10.5px] uppercase tracking-[0.22em] text-white/30">
-            © 2024 SPELONLINE · t.me/spelonline
+            © 2026 Xbox Россия Игры и Подписки · t.me/spelonline
           </p>
           <p className="max-w-md font-mono text-[10px] leading-relaxed tracking-wide text-white/25">
             Не является продуктом Microsoft. Xbox и Xbox Live — товарные знаки Microsoft Corporation.
