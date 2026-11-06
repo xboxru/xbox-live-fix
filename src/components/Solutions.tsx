@@ -88,7 +88,7 @@ const METHODS: Method[] = [
           роутере — замените его на новый.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CopyChip value="31.129.110.240" label="Основной" big />
+          <CopyChip value="164.90.228.248" label="Основной" big />
         </div>
 
         <div className="mt-8">
@@ -108,7 +108,7 @@ const METHODS: Method[] = [
               lines={[
                 { text: "no ip host user.auth.xboxlive.com", tone: "cmd" },
                 { text: "no ip host xsts.auth.xboxlive.com", tone: "cmd" },
-                { text: "ip host xsts.auth.xboxlive.com 31.129.110.240", tone: "ок" },
+                { text: "ip host xsts.auth.xboxlive.com 164.90.228.248", tone: "ок" },
                 { text: "system configuration save", tone: "ok" },
               ]}
             />
@@ -137,7 +137,7 @@ const METHODS: Method[] = [
           и удалите устаревшую строку:
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CopyChip value="31.129.110.240" label="Новый хост" big />
+          <CopyChip value="164.90.228.248" label="Новый хост" big />
         </div>
         <div className="mt-5 inline-flex items-center gap-3 rounded-xl border border-red-400/20 bg-red-400/[0.05] px-4 py-3">
           <Trash2 size={15} className="text-red-300" />
