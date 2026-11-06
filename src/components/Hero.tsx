@@ -148,7 +148,7 @@ export default function Hero() {
           </div>
           <div className="panel absolute -right-3 bottom-[16%] animate-float rounded-xl px-4 py-3 backdrop-blur-md [animation-delay:1.6s]">
             <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40">Новый DNS</div>
-            <div className="mt-1 font-mono text-[13px] text-xbox-soft">45.90.33.120</div>
+            <div className="mt-1 font-mono text-[13px] text-xbox-soft">201.79.94.91</div>
           </div>
           <div className="panel absolute bottom-[38%] left-[-6%] animate-float rounded-xl px-4 py-3 backdrop-blur-md [animation-delay:3s]">
             <div className="flex items-center gap-2.5">
