@@ -4,7 +4,7 @@ const ITEMS = [
   { text: "xsts.auth.xboxlive.com — OK", hot: false },
   { text: "Санкций со стороны Microsoft нет", hot: true },
   { text: "Причина — отказ прокси-сервера", hot: false },
-  { text: "Новый DNS: 45.90.33.120", hot: true },
+  { text: "Новый DNS: 201.79.94.91", hot: true },
   { text: "Новый хост: 164.90.228.248", hot: false },
 ];
 
