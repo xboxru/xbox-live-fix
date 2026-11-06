@@ -54,13 +54,13 @@ const METHODS: Method[] = [
           пропишите обновлённый адрес:
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-4">
-          <CopyChip value="45.90.33.120" big />
+          <CopyChip value="201.79.94.91" big />
           <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/35">
             нажмите, чтобы скопировать
           </span>
         </div>
         <div className="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 font-mono text-[12px] text-white/50">
-          {["Сеть", "Доп. настройки", "DNS вручную", "45.90.33.120"].map((s, i, arr) => (
+          {["Сеть", "Доп. настройки", "DNS вручную", "201.79.94.91"].map((s, i, arr) => (
             <span key={s} className="flex items-center gap-3">
               <span className={i === arr.length - 1 ? "text-xbox" : ""}>{s}</span>
               {i < arr.length - 1 && <ChevronRight size={12} className="text-white/25" />}
@@ -170,7 +170,7 @@ const METHODS: Method[] = [
           <span className="text-white"> на самой консоли</span> — тот же эффект, ноль дополнительных программ:
         </p>
         <div className="mt-6">
-          <CopyChip value="45.90.33.120" big />
+          <CopyChip value="201.79.94.91" big />
         </div>
       </>
     ),
